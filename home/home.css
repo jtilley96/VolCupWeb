@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-title-container {
+    height: 90vh;
+    position: fixed;
+    top: 5vh;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -10;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container {
+    background-color: rgb(187, 138, 202);
+}
+
+.nav-bar {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    border-bottom: 2px solid black;
+    z-index: 10;
+}
+
+.vc-logo img {
+    width: 75px;
+    border-radius: 50%;
+}
+
+.nav-item {
+    padding: 10px;
+    font-size: 28px;
+    font-family: 'Dancing script', cursive;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    color: white;
+}
+
+.logo-title-container {
+    height: 90vh;
+    position: fixed;
+    top: 5vh;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+
+.home-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #eee;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+}
+
+.welcome h1 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 800;
+    font-size: 48px;
+    padding: 50px;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: #ddc4e4;
+    box-shadow: 5px 10px 50px #808080;
+    padding-top: 15px;
+}
+
+.bio {
+    width: 506px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.bio img {
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    font-family: 'Dancing script', cursive;
+}
+
+.location img {
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container {
+    width: 352px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.carousel-item img {
+    border-radius: 15px;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 25px;
+}
+
+.shout-outs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.shout-imgs {
+    width: 100%;
+}
+
+.shout-imgs img {
+    width: 150px;
+}
+
+.fb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-bottom: 15px;
+}
+
+.fb-text {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(187, 138, 202);
+    color: white;
+}
+
+.footer {
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 138, 202);
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    border-top: 2px solid black;
+}
+
+/*-----------VC Basic table------------*/
+table.VCtable {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    border-spacing: 0;
+}
+
+    table.VCtable thead tr td {
+        background-image: linear-gradient(to bottom, white, rgb(187, 138, 202));
+        text-align: center;
+        font-weight: 600;
+        font-family: Verdana;
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+        table.VCtable thead tr td:first-of-type {
+            border-top-left-radius: 10px;
+        }
+
+        table.VCtable thead tr td:last-of-type {
+            border-top-right-radius: 10px;
+        }
+
+    table.VCtable tbody tr td {
+        border-top: 1px solid grey;
+        padding: 3px;
+        margin:3px;
+    }
+/*-----------------------------------------*/
+
+@media only screen and (max-width: 500px) {
+    
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
