@@ -161,6 +161,15 @@ header {
     padding: 25px;
 }
 
+.reviews {
+    width: 500px;
+    margin-top: 100px;
+}
+
+.reviews iframe {
+    height: 300px;
+}
+
 .shout-outs {
     width: 100%;
     display: flex;
@@ -242,7 +251,13 @@ table.VCtable {
 /*-----------------------------------------*/
 
 @media only screen and (max-width: 500px) {
-    
+    .reviews {
+        display: none;
+    }
+
+    .fb {
+        margin-bottom: 50px;
+    }
 }
 
 @keyframes fadeInAnimation {
